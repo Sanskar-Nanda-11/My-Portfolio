@@ -8,7 +8,7 @@ function App() {
       alert("mounting component")
   
     return () => {
-      alert("unmounting component")
+      alert("This Web App is Under Development , for your Easyness this website reloads automatically by itself")
     }
   }, [])
   
