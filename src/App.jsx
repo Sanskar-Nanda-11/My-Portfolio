@@ -10,8 +10,6 @@ function App() {
       alert("Thanks for checking out our app! We're still building it, so we've enabled auto-reloading to always show you the latest version.")
     }
   }, [])
-  
-
   return (
     <>
     <Navbar />
