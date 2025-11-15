@@ -1,9 +1,17 @@
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
 import './App.css'
 import Navbar from './Components/Navbar.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  useEffect(() => {
+      alert("mounting component")
+  
+    return () => {
+      alert("unmounting component")
+    }
+  }, [])
+  
 
   return (
     <>
