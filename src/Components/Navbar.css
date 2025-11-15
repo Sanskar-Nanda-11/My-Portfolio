@@ -30,3 +30,13 @@ body {
   justify-content: space-around;
   overflow: hidden;
 }
+
+.nav-links li {
+  padding: 14px 20px;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none
+}
