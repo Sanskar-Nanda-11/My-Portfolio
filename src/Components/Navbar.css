@@ -23,7 +23,7 @@ body {
 }
 
 .nav-links {
-  float: left;
+  float: right;
   list-style-type: none;
   margin: 0;
   padding: 0;
