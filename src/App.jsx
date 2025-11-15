@@ -5,8 +5,7 @@ import Navbar from './Components/Navbar.jsx'
 function App() {
   const [count, setCount] = useState(0)
   useEffect(() => {
-      alert("mounting component")
-  
+      // alert("mounting component")
     return () => {
       alert("This Web App is Under Development , for your Easyness this website reloads automatically by itself")
     }
