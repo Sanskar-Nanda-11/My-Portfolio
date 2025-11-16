@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [targetPosition, setTargetPosition] = useState(0 , 0 )
 
   const navbarLinks = [
     { name: 'Home', href: '#' },      // Update hrefs as needed 
