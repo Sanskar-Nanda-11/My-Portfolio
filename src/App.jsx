@@ -7,7 +7,7 @@ function App() {
 
   const navbarLinks = [
     { name: 'Home', href: '#' },      // Update hrefs as needed 
-    { name: 'About', href: '#' },   // list of navbar links
+    { name: 'About', href: '#' },     // list of navbar links
     { name: 'Contact', href: '#' },
     { name: 'Resume', href: '#' },
   ];
