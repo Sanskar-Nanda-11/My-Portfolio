@@ -16,7 +16,7 @@ body {
 }
 
 .logohead {
-  float: left;
+  /* float: left; */
   display: flex;
   align-items: center;
   color: white;
