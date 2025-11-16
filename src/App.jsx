@@ -4,6 +4,14 @@ import Navbar from './Components/Navbar.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const navbarLinks = [
+    { name: 'Home', href: '#' },      // Update hrefs as needed 
+    { name: 'About', href: '#' },   // list of navbar links
+    { name: 'Contact', href: '#' },
+    { name: 'Resume', href: '#' },
+  ];
+
   useEffect(() => {
       // alert("mounting component")
     return () => {
@@ -12,7 +20,8 @@ function App() {
   }, [])
   return (
     <>
-    <Navbar />
+    <Navbar links={navbarLinks} />
+
     <h1> Coming Soon! </h1>
     {/* // Its On The Way 🚲🚲🚲🚲 */}
     </>
