@@ -6,7 +6,7 @@ const Navbar = ({ links }) => {
   return (
     <div>
       <nav className='navbar-with-logo'>
-        <div className="logohead"> My Portfolio </div>
+        <div className="logohead"><a href="#">My Portfolio</a></div>
         <ul className='nav-links'>
           {links.map((links, index) => (
             <li key={index}><a href="#">{links.name}</a></li>
