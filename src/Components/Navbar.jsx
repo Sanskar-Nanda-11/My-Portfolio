@@ -8,9 +8,10 @@ const Navbar = () => {
       <nav className='navbar-with-logo'>
         <div className="logohead"> My Portfolio </div>
         <ul className='nav-links'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">About</a></li>
+            <li><a href="http://">Contact</a></li>
+            <li><a href="http://">Resume</a></li>
         </ul>
       </nav>
     </div>
