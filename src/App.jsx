@@ -1,6 +1,7 @@
 import { useState , useEffect} from 'react'
 import './App.css'
 import Navbar from './Components/Navbar.jsx'
+import animationAfterNavbar from './Components/animationAfterNavbar.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,7 @@ function App() {
   return (
     <>
     <Navbar links={navbarLinks} />
-    <div className='after-navbar'></div>
+    <animationAfterNavbar />
     <h1> Coming Soon! </h1>
     {/* // Its On The Way 🚲🚲🚲🚲 */}
     </>
