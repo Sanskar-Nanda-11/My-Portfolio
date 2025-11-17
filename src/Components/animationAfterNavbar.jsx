@@ -1,13 +1,12 @@
 import React from 'react'
 import './animationAfterNavbar.css'
 
-const animationAfterNavbar = () => {
+const AnimationAfterNavbar = () => {
   return (
     <div className="after-navbar">
-      
     </div>
   )
 }
 
-export default animationAfterNavbar
+export default AnimationAfterNavbar
 
