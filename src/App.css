@@ -5,8 +5,8 @@
 
 
 .after-navbar {
-  height: 60px; /* Adjust this value to match the height of your navbar */
+  height: 30vw; /* Adjust this value to match the height of your navbar */
   width: 100%;
-  background-color: #f8f9fa; /* Optional: Add a background color to visually separate the space */
+  background-color: black; /* Optional: Add a background color to visually separate the space */
   border: 2px solid #e0e0e0; /* Optional: Add a border to visually separate the space */
 }
