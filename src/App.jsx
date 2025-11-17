@@ -22,7 +22,7 @@ function App() {
   return (
     <>
     <Navbar links={navbarLinks} />
-
+    <div className='after-navbar'></div>
     <h1> Coming Soon! </h1>
     {/* // Its On The Way 🚲🚲🚲🚲 */}
     </>
