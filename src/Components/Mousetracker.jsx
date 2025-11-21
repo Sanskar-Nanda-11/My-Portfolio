@@ -2,12 +2,12 @@ import React from 'react'
 
 const Mousetracker = () => {
     useEffect(() => {
-      first
+      window.addEventListener('mousemove ', handlemousemove);
     
       return () => {
-        second
-      }
-    }, [third])
+        windows.removeEventListener('mousemove', handlemousemove);
+      };
+    }, [])
     
   return (
     <div>
