@@ -2,8 +2,8 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div>
-      
+    <div className='w-full h-screen'> 
+      Skills
     </div>
   )
 }
