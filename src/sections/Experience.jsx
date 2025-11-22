@@ -2,8 +2,8 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <div>
-      
+    <div className='w-full h-screen'>
+      Experience
     </div>
   )
 }
