@@ -7,10 +7,12 @@ import Home from "./sections/Home";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Testmonial from "./sections/Testmonial";
+import ParticalsBackground from "./components/ParticalsBackground";
 
 export default function App(){
   return(
-    <div>
+    <div className=" relative gradient text-color-white ">
+      <ParticalsBackground/>
       <Navbar/>
       <Home/>
       <About/>
