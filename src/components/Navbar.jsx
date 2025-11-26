@@ -21,7 +21,7 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <nav className="hidden  md:flex items-center space-x-7">
                     {Navabarlinks.map((Link)=>(
-                        <a key={link.id} href={link.link }></a>
+                        <a key={Link.id} href={Link.link }></a>
                     ))}
                 </nav>
             </div>
