@@ -38,7 +38,7 @@ const Navbar = () => {
             </div>
             {/* Close Button */}
             <button className="absolute top-5 right-5 text-white " onClick={() => setIsOpen(false)}>
-                 <Fix className="w-8 h-8" />
+                 <FiX className="w-8 h-8" />
                  </button>
                  {/* Mobile Navigation */}
                  {Navabarlinks.map((Link)=>(
