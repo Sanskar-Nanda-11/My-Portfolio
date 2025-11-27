@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, Fix  } from 'react-icons/fi'
 
 const Navbar = () => {
     const [IsOpen, setIsOpen] = useState(false)
@@ -38,7 +38,7 @@ const Navbar = () => {
             </div>
             {/* Close Button */}
             <button className="absolute top-5 right-5 text-white " onClick={() => setIsOpen(false)}>
-                 <FiX className="w-8 h-8" />
+                 <Fix className="w-8 h-8" />
                  </button>
                  {/* Mobile Navigation */}
                  {Navabarlinks.map((Link)=>(
