@@ -45,7 +45,7 @@ const Navbar = () => {
                     <a key={Link.id} href={Link.link} className=" text-lg text-white hover:text-gray-300" onClick={()=>setIsOpen(false)}>{Link.name}</a>
                  ))}
                  {/* Contact Button */}
-                 <button className=" inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg"></button>
+                 <button className=" inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg"> Contact </button>
         </header>
     )
 }
