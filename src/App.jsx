@@ -1,6 +1,6 @@
 import {React , useEffect} from 'react'   // import React and useEffect hook
 import AOS from 'aos'  // import AOS library
-import Hero from './components/Hero'
+import Hero from './components/Hero.jsx'
 import 'aos/dist/aos.css' // import AOS styles
 function App() {
   useEffect(() => {
