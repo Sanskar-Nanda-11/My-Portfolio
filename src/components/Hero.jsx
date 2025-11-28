@@ -19,10 +19,34 @@ const Hero = () => {
               Sanskar Nanda
             </h1>
             <h2 className=" text-xl sm:text-4xl md:text-2xl font-bold text-[#3e0f4a] md:text-[#c744ec] md-2 ">
-
+              Full Stack Developer
             </h2>
           </header>
+          <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, numquam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, laudantium?
+          </p>
+          <div className="flex items-center space-x-4 mb-6">
+            <a href="#">
+              <img src={github} alt="Github" className='w-11 h-11' />
+              </a>
+            <a href="#">
+              <img src={linkedin} alt="Linkedin" className='w-11 h-11' />
+              </a>
+              <a href="#">
+              <img src={facebook} alt="Facebook" className='w-11 h-11' />
+              </a>
+              <a href="#">
+              <img src={instagram} alt="Instagram" className='w-11 h-11' />
+              </a>
+          </div>
+          <a href={IT_Fresher_Resume_Template} download>
+            <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover: shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg"> Downlaod CV </button>
+          </a>
         </section>
+        <figure data-aos='fade-up' data-aos-delay='500' className=" flex-1 flex justify-center md:justify-end mt-0">
+          <img src={img_hero} alt="Hero Image" className="h-[300px] sm:h-[400px] md:h-[485px] w-[250px] sm:w-[480px] object-cover rounded-lg " />
+        </figure>
       </main>
     </div>
   )
