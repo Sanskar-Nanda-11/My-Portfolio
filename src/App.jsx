@@ -3,6 +3,7 @@ import AOS from 'aos'  // import AOS library
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
+import Project from './components/Project.jsx'
 import 'aos/dist/aos.css' // import AOS styles
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
     <Hero />
     <About />
     <Skills/>
+    <Project/>
   </main>
   )
 }
