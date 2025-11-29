@@ -2,6 +2,7 @@ import {React , useEffect} from 'react'   // import React and useEffect hook
 import AOS from 'aos'  // import AOS library
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
+import Skills from './components/Skills.jsx'
 import 'aos/dist/aos.css' // import AOS styles
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
   <main className='bg-gray-950'>
     <Hero />
     <About />
+    <Skills/>
   </main>
   )
 }

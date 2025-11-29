@@ -1,15 +1,15 @@
 import React from 'react'
 import React_logo from '/react.png'
-import Tailwind_logo from '/png-transplarent-tailwind-css-hd-logo.png'
-import Java from '/java-logo.png'
-import Spring_Boot from '/spring-boot-logo.png'
-import img_hero from '/img-hero.png'
+import Tailwind_logo from '/png-transparent-tailwind-css-hd-logo.png'
+import Java from '/java.png'
+import Spring_Boot from '/spring_boot_logo.png'
+import img_hero from '/img_hero.png'
 
 const skillData = [
   {id:1 , image:React_logo , title:'React JS' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
-  {id:2 , image:Tailwind_logo , title:'React JS' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
-  {id:3 , image:Java , title:'React JS' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
-  {id:4 , image:Spring_Boot , title:'React JS' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'}
+  {id:2 , image:Tailwind_logo , title:'Tailwind' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
+  {id:3 , image:Java , title:'Java' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
+  {id:4 , image:Spring_Boot , title:'Spring Boot' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'}
 ];
 
 const SkillBox=({image,title,description})=>(
