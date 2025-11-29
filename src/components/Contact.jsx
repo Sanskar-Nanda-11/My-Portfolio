@@ -6,7 +6,7 @@ const Contact = () => {
         <section data-aos='fade-up' data-aos-delay='300' className=' min-h-screen overflow-hidden justify-around flex items-center p-6 m-10 relative '> 
         <article className='shadow-lg rounded-lg flex flex-col md:flex-row max-w-4xl w-full relative'> 
             <aside className='w-full md:w-1/2 relative'>
-                <div className='absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] rounded-full bg-gradient-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] shadow-[0_0_70px_rgba(182,0,182,0.7)] '></div>
+                <div className='absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] rounded-full bg-linear-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] shadow-[0_0_70px_rgba(182,0,182,0.7)] '></div>
                 <img src={img_hero} alt=" Contact Illustration " className='h-[250px] sm:h-[400px] md:h-[485px] w-[300px] sm:w-[480px]  object-cover rounded-t-lg md:rounded-r-lg relative '/>
             </aside>
             {/* CONTACT FORM */}
