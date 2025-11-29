@@ -5,6 +5,7 @@ import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Project from './components/Project.jsx'
 import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 import 'aos/dist/aos.css' // import AOS styles
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
     <Skills/>
     <Project/>
     <Contact />
+    <Footer/>
   </main>
   )
 }
