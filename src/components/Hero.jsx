@@ -3,8 +3,6 @@ import Navbar from './Navbar'
 import img_hero from '/img_hero.png'
 import github from '/github.png'
 import linkedin from '/linkedin.png'
-import facebook from '/facebook.png'
-import instagram from '/Instagram-Logo.png'
 import IT_Fresher_Resume_Template from '/IT_Fresher_Resume_Template.pdf'
 const Hero = () => {
   return (
@@ -15,16 +13,15 @@ const Hero = () => {
         <section className="flex-1 mr-28 md:text-left mt-10 md:mt-10 relative " data-aos='fade-up' data-aos-delay='500'>
           <div className="absolute -z-10 w-60 h-60 bg-[#cd3cf5] rounded-full blur-3xl opacity-50 -top-5 -left-12"></div>
           <header>
-            <h1 className=" text-4xl sm:text-4xl md:text-5xl font-bold text-white md-4">
-              Sanskar Nanda
+            <h1 className=" text-2xl sm:text-4xl md:text-5xl font-bold text-white md-4">
+              Hi, I’m Sanskar Nanda👋
             </h1>
             <h2 className=" text-xl sm:text-4xl md:text-2xl font-bold text-[#3e0f4a] md:text-[#c744ec] md-2 ">
               Full Stack Developer
             </h2>
           </header>
           <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, numquam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, laudantium?
+            I build scalable digital solutions that help organizations solve real problems by integrating frontend usability, backend performance, and structured data systems.
           </p>
           <div className="flex items-center space-x-4 mb-6">
             <a href="#">
@@ -32,12 +29,6 @@ const Hero = () => {
               </a>
             <a href="#">
               <img src={linkedin} alt="Linkedin" className='w-11 h-11' />
-              </a>
-              <a href="#">
-              <img src={facebook} alt="Facebook" className='w-11 h-11' />
-              </a>
-              <a href="#">
-              <img src={instagram} alt="Instagram" className='w-11 h-11' />
               </a>
           </div>
           <a href={IT_Fresher_Resume_Template} download>

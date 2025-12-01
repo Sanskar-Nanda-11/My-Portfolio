@@ -19,7 +19,10 @@ const About = () => {
                     <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6'>About Me</h1>
                 </header>
                 <p className='text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, blanditiis repudiandae aspernatur voluptates nobis, obcaecati earum totam dolores ad nostrum facere corrupti eum. Molestias dolorum nesciunt fugiat omnis similique, eius veniam quos dignissimos quam error eos dolores ex commodi eligendi?
+                    I am a Full-Stack Developer with a focus on building intuitive user interfaces and reliable backend systems. I work to transform ideas into well-structured, modern digital solutions by applying clean design principles and systematic problem-solving. I am currently expanding my understanding of scalable architecture and seeking opportunities to contribute to impactful, growth-oriented projects.”
+                    <br /><br />
+Tech I Use:
+React · Java · Spring Boot · SQL · Git 
                 </p>
                 <footer>
                     <button className='inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg'>
