@@ -31,7 +31,7 @@ const Skills = () => {
       <div data-aos='fade-up' data-aos-delay='300' className="relative z-20 text-center space-y-6 sm:space-y-16">
         <header>
           <h1 className=" text-3xl sm:text-4xl font-bold ">
-            My Experise <br /> and <span className="text-purple-400"> Skils </span>
+            My Expertise <br /> & <span className="text-purple-400"> What I Do Best </span>
           </h1>
           <p className="text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium cumque illo eos dolorem recusandae totam atque distinctio ab aut.
