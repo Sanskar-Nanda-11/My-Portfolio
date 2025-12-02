@@ -72,7 +72,7 @@ const Project = () => {
                         My <span className="text-purple-400 "> Projects </span>
                     </h1>
                     <p className='text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, hic.
+                        A selection of the work I’ve built, focusing on clear design, solid structure, and meaningful functionality.
                     </p>
                 </header>
             </section>
