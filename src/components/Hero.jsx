@@ -27,7 +27,7 @@ const Hero = () => {
             <a href="#">
               <img src={github} alt="Github" className='w-11 h-11' />
               </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/sanskar-nanda11/" target='_blank' rel="noopener noreferrer">
               <img src={linkedin} alt="Linkedin" className='w-11 h-11' />
               </a>
           </div>
