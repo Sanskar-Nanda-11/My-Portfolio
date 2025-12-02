@@ -3,13 +3,14 @@ import React_logo from '/react.png'
 import Tailwind_logo from '/png-transparent-tailwind-css-hd-logo.png'
 import Java from '/java.png'
 import Spring_Boot from '/spring_boot_logo.png'
+
 import img_hero from '/img_hero.png'
 
 const skillData = [
-  {id:1 , image:React_logo , title:'React JS' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
-  {id:2 , image:Tailwind_logo , title:'Tailwind' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
-  {id:3 , image:Java , title:'Java' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'},
-  {id:4 , image:Spring_Boot , title:'Spring Boot' , description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quidem.'}
+  {id:1 , image:React_logo , title:'React JS' , description:'I create smooth, interactive, and user-focused interfaces using React’s component-driven approach.'},
+  {id:2 , image:Tailwind_logo , title:'Tailwind' , description:'I build clean, responsive, and visually consistent interfaces using Tailwind’s utility-first styling approach.'},
+  {id:3 , image:Java , title:'Java' , description:'I build reliable, structured application logic with Java’s strong object-oriented foundation.'},
+  {id:4 , image:Spring_Boot , title:'Spring Boot' , description:'I develop efficient, production-ready backend systems using Spring Boot’s streamlined framework.'}
 ];
 
 const SkillBox=({image,title,description})=>(
@@ -34,7 +35,7 @@ const Skills = () => {
             My Expertise <br /> & <span className="text-purple-400"> What I Do Best </span>
           </h1>
           <p className="text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium cumque illo eos dolorem recusandae totam atque distinctio ab aut.
+            I blend thoughtful user-facing experiences with strong internal systems and well-structured data flow to create complete, seamless digital solutions.
              </p>
         </header>
         <section data-aos='fade-up' data-aos-delay='500' className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-4 '>
