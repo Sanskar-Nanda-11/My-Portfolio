@@ -24,7 +24,7 @@ const Hero = () => {
             I build scalable digital solutions that help organizations solve real problems by integrating frontend usability, backend performance, and structured data systems.
           </p>
           <div className="flex items-center space-x-4 mb-6">
-            <a href="#">
+            <a href="https://github.com/Sanskar-Nanda-11" target='_blank' rel="noopener noreferrer">
               <img src={github} alt="Github" className='w-11 h-11' />
               </a>
             <a href="https://www.linkedin.com/in/sanskar-nanda11/" target='_blank' rel="noopener noreferrer">
