@@ -30,8 +30,8 @@ const Contact = () => {
               <input type="email" name='email' id='email' placeholder='Your Email' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' />
             </div>
             <div>
-            <label htmlFor="email" className='block text-gray-300 font-medium mb-2'>Email</label>
-              <input type="email" name='email' id='email' placeholder='Your Email' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' />
+            <label htmlFor="subject" className='block text-gray-300 font-medium mb-2'>Subject</label>
+              <input type="text" name='subject' id='subject' placeholder='Your Subject' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' />
             </div>
             <div>
               {/* FIXED: htmlFor must match id exactly (was "Messages") */}
