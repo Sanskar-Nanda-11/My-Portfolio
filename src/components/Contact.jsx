@@ -30,6 +30,10 @@ const Contact = () => {
               <input type="email" name='email' id='email' placeholder='Your Email' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' />
             </div>
             <div>
+            <label htmlFor="email" className='block text-gray-300 font-medium mb-2'>Email</label>
+              <input type="email" name='email' id='email' placeholder='Your Email' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' />
+            </div>
+            <div>
               {/* FIXED: htmlFor must match id exactly (was "Messages") */}
               <label htmlFor="message" className='block text-gray-300 font-medium mb-2'>Messages</label>
               <textarea name="message" id="message" placeholder='Your Message' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none'></textarea>
