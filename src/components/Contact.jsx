@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from 'react';
 import img_hero from '/img_hero.png';
 
