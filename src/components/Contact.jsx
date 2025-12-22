@@ -18,6 +18,29 @@ const Contact = () => {
   })
   };
 
+  const handleSubmit = async(e) => {  // to handle form submission
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    try{             // try block to catch any errors
+      const respone = await fetch('http://localhost:8080/api/contact',{  // sending data to backend
+        method : 'POST',     // method type
+        headers : {           // it is telling the server what type of data is being sent
+          'Content-Type' : 'application/json',   // content type
+        },
+        body : JSON.stringify(Formdata),  // converting js object to json string and sending it to backend ( Actual data )
+      });
+      if (respone.ok) {
+        alert("🎉 Message Sent Successfully!");
+        setFormdata({name : " " , email : " " , subject : " " , message : " "})
+      }else{
+        alert("❌ Failed to send message.");
+      }
+    }catch(error){
+       console.error("Error : " , error); 
+       alert("❌ Server is not responding. Is Spring Boot running?");
+      }
+  }
+
 
   return (
     <section
@@ -33,7 +56,7 @@ const Contact = () => {
         </aside>
 
         {/* CONTACT FORM */}
-        <section className='p-8 w-full md:w-1/2'>
+        <section className='p-8 w-full md:w-1/2'onSubmit={handleSubmit}>
           <header className='mb-6'>
             <h2 className='text-4xl font-bold text-center text-white'>Contact Us</h2>
           </header>
