@@ -3,6 +3,22 @@ import React from 'react';
 import img_hero from '/img_hero.png';
 
 const Contact = () => {
+  // State to store form data (Keys match with my backend code exactly!)
+  const [Formdata, setFormdata] = useState({
+    name:'',                                // to set the data given by user 
+    email:'',
+    subject:'',
+    message:'',
+  });
+
+  const handleChange = (e)=>{  // to update the state when user types in the form
+    setFormdata({   // updating the state
+      ...Formdata, // spread operator to keep other data intact
+      [e.target.name]:e.target.value  // updating the specific field
+  })
+  };
+
+
   return (
     <section
       id="contact"
