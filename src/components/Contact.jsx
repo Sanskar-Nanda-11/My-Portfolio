@@ -63,20 +63,20 @@ const Contact = () => {
           <form className='space-y-4'>
             <div>
               <label htmlFor="name" className='block text-gray-300 font-medium mb-2'>Name</label>
-              <input type="text" name='name' id='name' placeholder='Your Name' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={formData.name} onChange={handleChange}/>
+              <input type="text" name='name' id='name' placeholder='Your Name' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.name} onChange={handleChange}/>
             </div>
             <div>
               <label htmlFor="email" className='block text-gray-300 font-medium mb-2'>Email</label>
-              <input type="email" name='email' id='email' placeholder='Your Email' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={formData.email} onChange={handleChange}/>
+              <input type="email" name='email' id='email' placeholder='Your Email' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.email} onChange={handleChange}/>
             </div>
             <div>
             <label htmlFor="subject" className='block text-gray-300 font-medium mb-2'>Subject</label>
-              <input type="text" name='subject' id='subject' placeholder='Your Subject' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={formData.subject} onChange={handleChange}/>
+              <input type="text" name='subject' id='subject' placeholder='Your Subject' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.subject} onChange={handleChange}/>
             </div>
             <div>
               {/* FIXED: htmlFor must match id exactly (was "Messages") */}
               <label htmlFor="message" className='block text-gray-300 font-medium mb-2'>Messages</label>
-              <textarea name="message" id="message" placeholder='Your Message' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={formData.message} onChange={handleChange} ></textarea> 
+              <textarea name="message" id="message" placeholder='Your Message' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.message} onChange={handleChange} ></textarea> 
             </div>
             {/* make button type explicit */}
             <button type="submit" className='w-full text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg'>Send Message</button>
