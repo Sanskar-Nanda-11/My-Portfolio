@@ -1,6 +1,8 @@
 import { useState } from "react";
 import React from 'react';
 import img_hero from '/img_hero.png';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 
 const Contact = () => {
   // State to store form data (Keys match with my backend code exactly!)
@@ -22,7 +24,7 @@ const Contact = () => {
     e.preventDefault(); // Prevent the default form submission behavior
 
     try{             // try block to catch any errors
-      const respone = await fetch('http://localhost:8080/api/contact',{  // sending data to backend
+      const respone = await fetch('${API_BASE_URL}/contact',{  // sending data to backend
         method : 'POST',     // method type
         headers : {           // it is telling the server what type of data is being sent
           'Content-Type' : 'application/json',   // content type
