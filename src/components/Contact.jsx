@@ -24,7 +24,7 @@ const Contact = () => {
     e.preventDefault(); // Prevent the default form submission behavior
 
     try{             // try block to catch any errors
-      const respone = await fetch('https://my-portfolio-backend-p9v3.onrender.com/api/contact',{  // sending data to backend
+      const respone = await fetch(`https://my-portfolio-backend-p9v3.onrender.com/api/contact`,{  // sending data to backend
         method : 'POST',     // method type
         headers : {           // it is telling the server what type of data is being sent
           'Content-Type' : 'application/json',   // content type
