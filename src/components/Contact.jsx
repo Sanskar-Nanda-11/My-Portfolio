@@ -33,7 +33,7 @@ const Contact = () => {
       });
       if (respone.ok) {
         alert("🎉 Message Sent Successfully!");
-        setFormdata({name : " " , email : " " , subject : " " , message : " "})
+        setFormdata({name : "" , email : "" , subject : "" , message : ""})
       }else{
         alert("❌ Failed to send message.");
       }
