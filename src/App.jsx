@@ -1,52 +1,50 @@
-import { React, useEffect, useState } from 'react'   // import React and useEffect hook
-import AOS from 'aos'  // import AOS library
-import Hero from './components/Hero.jsx'
-import About from './components/About.jsx'
-import Skills from './components/Skills.jsx'
-import Project from './components/Project.jsx'
-import Contact from './components/Contact.jsx'
-import Footer from './components/Footer.jsx'
-import { apiGet } from './services/api.jsx'
-import IntroOverlay from './components/IntroOverlay.jsx'
-import 'aos/dist/aos.css' // import AOS styles
+import { useEffect, useState } from "react";
+import AOS from "aos";
+
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Project from "./components/Project.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+import IntroOverlay from "./components/IntroOverlay.jsx";
+
+import { apiGet } from "./services/api.jsx";
+import "aos/dist/aos.css";
+
 function App() {
+  const [loading, setLoading] = useState(true);
 
-  const [loading, setloading] = useState(true);
+  // Lock scroll during intro
+  useEffect(() => {
+    document.body.style.overflow = loading ? "hidden" : "auto";
+  }, [loading]);
 
-  // Init AOS only AFTER loading finishes
+  // Init AOS AFTER intro is gone
   useEffect(() => {
     if (!loading) {
-      AOS.init({  // initialize AOS library
-        duration: 1000, // values from 0 to 3000, with step 50ms
-      })
+      setTimeout(() => {
+        AOS.init({
+          duration: 1000,
+          once: true,
+          easing: "ease-out-cubic",
+        });
+        AOS.refresh();
+      }, 50);
     }
-  },
-    [loading]);
+  }, [loading]);
 
-
-      // Optional backend warm-up
+  // Backend warm-up (optional, safe)
   useEffect(() => {
-    apiGet("/contact")
-      .then((data) => console.log("Backend response:", data))
-      .catch((err) => console.error("Backend error:", err));
+    apiGet("/contact").catch(() => {});
   }, []);
-
-  // Control loader duration
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 3000) // 3s loader
-
-    return () => clearTimeout(timer)
-  }, [])
-  
 
   return (
     <>
-    {loading ? (
-        <IntroOverlay />
+      {loading ? (
+        <IntroOverlay onFinish={() => setLoading(false)} />
       ) : (
-        <main className="bg-gray-950">
+        <main className="bg-gray-950 min-h-screen overflow-x-hidden">
           <Hero />
           <About />
           <Skills />
@@ -56,7 +54,7 @@ function App() {
         </main>
       )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
