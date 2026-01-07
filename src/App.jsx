@@ -7,6 +7,7 @@ import Project from './components/Project.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import { apiGet } from './services/api.jsx'
+import IntroOverlay from './components/IntroOverlay.jsx'
 import 'aos/dist/aos.css' // import AOS styles
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <main className='bg-gray-950'>
+      <IntroOverlay />
       <Hero />
       <About />
       <Skills />
