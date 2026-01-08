@@ -29,8 +29,8 @@ const Project = () => {
     const listProjects = [
         {
             Image: project_photo1,
-            title: 'Portfolio Website 1',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, accusantium!',
+            title: 'My Portfolio Website',
+            description: 'A responsive personal portfolio website built with React and Tailwind CSS, featuring a custom-designed UI, smooth scroll animations, and a contact form controlled by a backend server.',
             link: ''
         },
         {
