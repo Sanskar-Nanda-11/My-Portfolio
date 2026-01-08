@@ -16,8 +16,6 @@ const welcomes = [
   { text: "സ്വാഗതം", state: "Kerala (Malayalam)" },
   { text: "ਸੁਆਗਤ ਹੈ", state: "Punjab (Punjabi)" },
   { text: "ସ୍ୱାଗତ", state: "Odisha (Odia)" },
-  { text: "خوش آمدید", state: "Urdu" },
-  { text: "ᱥᱣᱟᱜᱟᱛ", state: "Santali" },
 ];
 
 export default function IntroOverlay({ onFinish }) {
