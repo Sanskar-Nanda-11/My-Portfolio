@@ -35,8 +35,8 @@ const Project = () => {
         },
         {
             Image: project_photo2,
-            title: 'Portfolio Website 2',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, accusantium!',
+            title: 'CRUD Application ( comming online soon )',
+            description: 'A full-stack CRUD application built with React, java , spring bot , postgrace SQL , featuring user authentication and real-time data updates.',
             link: ''
         },
         {
