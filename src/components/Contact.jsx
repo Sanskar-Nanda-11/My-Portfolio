@@ -21,10 +21,25 @@ const Contact = () => {
   };
 
   const validationdata = () => {
-    if (!Formdata.name || !Formdata.email || !Formdata.subject || !Formdata.message) {
+    if (!Formdata.name === true) {
+      // alert("❌ All fields are required.");
+      document.getElementById("name-check").style.color = "red";
+      document.getElementById("name-check").textContent = "❌ Name fields are required.";
+      return false;
+    } else if (!Formdata.email === true) {
       // alert("❌ All fields are required.");
       document.getElementById("email-check").style.color = "red";
       document.getElementById("email-check").textContent = "❌ Email fields are required.";
+      return false;
+    }  else if (!Formdata.subject === true) {
+      // alert("❌ All fields are required.");
+      document.getElementById("subject-check").style.color = "red";
+      document.getElementById("subject-check").textContent = "❌ Subject fields are required.";
+      return false;
+    } else if (!Formdata.message === true) {
+      // alert("❌ All fields are required.");
+      document.getElementById("message-check").style.color = "red";
+      document.getElementById("message-check").textContent = "❌ Message fields are required.";
       return false;
     } else if (!/\S+@\S+\.\S+/.test(Formdata.email)) {
       alert("❌ Please enter a valid email address.");
@@ -80,6 +95,7 @@ const Contact = () => {
             <div>
               <label htmlFor="name" className='block text-gray-300 font-medium mb-2'>Name</label>
               <input type="text" name='name' id='name' placeholder='Your Name' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.name} onChange={handleChange}/>
+              <span id="name-check"></span>
             </div>
             <div>
               <label htmlFor="email" className='block text-gray-300 font-medium mb-2'>Email</label>
@@ -89,11 +105,13 @@ const Contact = () => {
             <div>
             <label htmlFor="subject" className='block text-gray-300 font-medium mb-2'>Subject</label>
               <input type="text" name='subject' id='subject' placeholder='Your Subject' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.subject} onChange={handleChange}/>
+              <span id="subject-check"></span>
             </div>
             <div>
               {/* FIXED: htmlFor must match id exactly (was "Messages") */}
               <label htmlFor="message" className='block text-gray-300 font-medium mb-2'>Messages</label>
               <textarea name="message" id="message" placeholder='Your Message' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.message} onChange={handleChange} ></textarea> 
+              <span id="message-check"></span>
             </div>
             {/* make button type explicit */}
             <button type="submit" className='w-full text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg'>Send Message</button>
