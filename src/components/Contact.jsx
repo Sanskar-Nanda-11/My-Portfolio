@@ -36,6 +36,10 @@ const Contact = () => {
   const handleSubmit = async(e) => {  // to handle form submission
     e.preventDefault(); // Prevent the default form submission behavior
 
+    if (validationdata() === false) {
+      return; // Stop submission if validation fails
+    }
+
     try{             // try block to catch any errors
       const respone = await fetch(`https://my-portfolio-backend-p9v3.onrender.com/api/contact`,{  // sending data to backend
         method : 'POST',     // method type
@@ -55,7 +59,6 @@ const Contact = () => {
        alert("❌ Server is not responding. Is Spring Boot running?");
       }
   }
-
 
   return (
     <section
@@ -95,7 +98,7 @@ const Contact = () => {
               <textarea name="message" id="message" placeholder='Your Message' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.message} onChange={handleChange} ></textarea> 
             </div>
             {/* make button type explicit */}
-            <button type="submit" className='w-full text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg'><div onClick={validationdata}>Send Message</div></button>
+            <button type="submit" className='w-full text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg'>Send Message</button>
           </form>
         </section>
       </article>
