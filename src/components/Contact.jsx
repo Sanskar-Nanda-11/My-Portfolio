@@ -24,7 +24,7 @@ const Contact = () => {
     if (!Formdata.name || !Formdata.email || !Formdata.subject || !Formdata.message) {
       // alert("❌ All fields are required.");
       document.getElementById("email-check").style.color = "red";
-      document.getElementById("email-check").textContent = "❌ All fields are required.";
+      document.getElementById("email-check").textContent = "❌ Email fields are required.";
       return false;
     } else if (!/\S+@\S+\.\S+/.test(Formdata.email)) {
       alert("❌ Please enter a valid email address.");
@@ -36,11 +36,8 @@ const Contact = () => {
   const handleSubmit = async(e) => {  // to handle form submission
     e.preventDefault(); // Prevent the default form submission behavior
 
-    if (validationdata() === false) {
-      return; // Stop submission if validation fails
-    }
-
-    try{             // try block to catch any errors
+    if (validationdata() === true) {
+      try{             // try block to catch any errors
       const respone = await fetch(`https://my-portfolio-backend-p9v3.onrender.com/api/contact`,{  // sending data to backend
         method : 'POST',     // method type
         headers : {           // it is telling the server what type of data is being sent
@@ -58,6 +55,7 @@ const Contact = () => {
        console.error("Error : " , error); 
        alert("❌ Server is not responding. Is Spring Boot running?");
       }
+    }
   }
 
   return (
