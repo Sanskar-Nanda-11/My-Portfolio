@@ -7,14 +7,14 @@ import { useEffect, useRef, useState } from "react";
 const welcomes = [
   { text: "Welcome", state: "English (Pan India)" },
   { text: "स्वागत है", state: "Hindi (North India)" },
-  { text: "স্বাগতম", state: "West Bengal (Bengali)" },
-  { text: "வணக்கம்", state: "Tamil Nadu (Tamil)" },
-  { text: "స్వాగతం", state: "Andhra Pradesh / Telangana (Telugu)" },
-  { text: "स्वागत आहे", state: "Maharashtra (Marathi)" },
-  { text: "સ્વાગત છે", state: "Gujarat (Gujarati)" },
-  { text: "ಸ್ವಾಗತ", state: "Karnataka (Kannada)" },
-  { text: "സ്വാഗതം", state: "Kerala (Malayalam)" },
-  { text: "ਸੁਆਗਤ ਹੈ", state: "Punjab (Punjabi)" },
+  // { text: "স্বাগতম", state: "West Bengal (Bengali)" },
+  // { text: "வணக்கம்", state: "Tamil Nadu (Tamil)" },
+  // { text: "స్వాగతం", state: "Andhra Pradesh / Telangana (Telugu)" },
+  // { text: "स्वागत आहे", state: "Maharashtra (Marathi)" },
+  // { text: "સ્વાગત છે", state: "Gujarat (Gujarati)" },
+  // { text: "ಸ್ವಾಗತ", state: "Karnataka (Kannada)" },
+  // { text: "സ്വാഗതം", state: "Kerala (Malayalam)" },
+  // { text: "ਸੁਆਗਤ ਹੈ", state: "Punjab (Punjabi)" },
   { text: "ସ୍ୱାଗତ", state: "Odisha (Odia)" },
 ];
 
