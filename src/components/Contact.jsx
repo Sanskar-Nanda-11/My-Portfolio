@@ -22,7 +22,9 @@ const Contact = () => {
 
   const validationdata = () => {
     if (!Formdata.name || !Formdata.email || !Formdata.subject || !Formdata.message) {
-      alert("❌ All fields are required.");
+      // alert("❌ All fields are required.");
+      document.getElementById("email-check").style.color = "red";
+      document.getElementById("email-check").textContent = "❌ All fields are required.";
       return false;
     } else if (!/\S+@\S+\.\S+/.test(Formdata.email)) {
       alert("❌ Please enter a valid email address.");
@@ -81,6 +83,7 @@ const Contact = () => {
             <div>
               <label htmlFor="email" className='block text-gray-300 font-medium mb-2'>Email</label>
               <input type="email" name='email' id='email' placeholder='Your Email' className='w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none' value={Formdata.email} onChange={handleChange}/>
+              <span id="email-check"></span>
             </div>
             <div>
             <label htmlFor="subject" className='block text-gray-300 font-medium mb-2'>Subject</label>
